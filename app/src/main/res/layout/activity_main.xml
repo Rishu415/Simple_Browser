@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.example.rishu.op.MainActivity">
+    <LinearLayout
+        android:weightSum="1"
+        android:layout_weight=".1"
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/url1"
+            android:layout_weight="0.90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+            android:id="@+id/btngo"
+            android:layout_weight="0.1"
+            android:text="go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <WebView
+        android:layout_weight=".80"
+        android:id="@+id/wv1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+
+    <ProgressBar
+        android:id="@+id/pb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:weightSum="1"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+            android:layout_weight="0.25"
+            android:id="@+id/bfor"
+            android:text="Forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+            android:layout_weight="0.25"
+            android:id="@+id/bbac"
+            android:text="Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+            android:layout_weight=".25"
+            android:id="@+id/bref"
+            android:text="Refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+            android:layout_weight=".25"
+            android:id="@+id/bcle"
+            android:text="clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>
